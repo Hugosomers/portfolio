@@ -31,7 +31,7 @@ export default function Header() {
           className={headerStyles.navLink}
           activeClassName={headerStyles.activeNavLink}
         >
-          Home
+          Início
         </NavLink>
 
         <NavLink

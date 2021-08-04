@@ -2,7 +2,7 @@ import React from 'react'
 import homeStyles from '../css/home.module.css';
 import ProfilePic from '../images/profile.jpeg'
 import { FaReact } from 'react-icons/fa';
-import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5 } from 'react-icons/si';
+import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5, SiNodeDotJs, SiMysql, SiMongodb } from 'react-icons/si';
 import { AiOutlineGithub } from 'react-icons/ai';
 
 export default function Home() {
@@ -40,7 +40,10 @@ export default function Home() {
             <SiRedux  size={70} color={'#764abc'} className={homeStyles.homeIcons}/>
           </div>
           <div>
-            <AiOutlineGithub  size={70} color={'#AD5C51'}/>
+            <SiNodeDotJs  size={70} color={'#3C873A'} className={homeStyles.homeIcons}/>
+            <SiMysql  size={70} color={'#00758F'} className={homeStyles.homeIcons}/>
+            <SiMongodb  size={70} color={'#4DB33D'} className={homeStyles.homeIcons}/>
+            <AiOutlineGithub  size={70} color={'#AD5C51'} className={homeStyles.homeIcons}/>
           </div>
           <div>
           </div>
