@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import projectsStyles from '../css/projects.module.css';
+import ProjectsItem from '../components/ProjectsDiv/ProjectsItem';
 
 export default function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
-    </div>
+    <section
+      className={projectsStyles.projectsPageContainer}
+    >
+      <div
+        className={projectsStyles.projectsTitleContainer}
+      >
+        <h1
+          className={projectsStyles.projectsHeadingTitle}
+        >
+          Projetos desenvolvidos.
+        </h1>
+      </div>
+
+      <div
+        className={projectsStyles.projectsContainer}
+      >
+        <ProjectsItem />
+      </div>
+    </section>
   )
 }
