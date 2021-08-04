@@ -8,6 +8,7 @@ export default function ProjectsItem() {
     <>
     {array.map((item, index) => (
       <div
+        key={index}
         className={projectsStyles.projectItemContainer}
       >
         <img alt="ProjectItem"/>
