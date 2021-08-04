@@ -1,6 +1,9 @@
 import React from 'react'
 import homeStyles from '../css/home.module.css';
 import ProfilePic from '../images/profile.jpeg'
+import { FaReact } from 'react-icons/fa';
+import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5 } from 'react-icons/si';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -20,6 +23,28 @@ export default function Home() {
         >
           &nbsp;&nbsp;&nbsp;&nbsp;Front End Developer.
         </h1>
+        <div
+          className={homeStyles.homeSubContainer}
+        >
+          <h2
+            className={homeStyles.homeHeadingSubTitle}
+          >
+            O que eu sei?
+          </h2>
+          <div>
+            <SiHtml5  size={70} color={'#e34c26'} className={homeStyles.homeIcons}/>
+            <SiCss3 size={70} color={'#264de4'} className={homeStyles.homeIcons}/>
+            <SiBootstrap  size={70} color={'#602C50'} className={homeStyles.homeIcons}/>
+            <SiJavascript size={70} color={'Yellow'} className={homeStyles.homeIcons}/>
+            <FaReact size={70} color={'#61DBFB'} className={homeStyles.homeIcons}/>
+            <SiRedux  size={70} color={'#764abc'} className={homeStyles.homeIcons}/>
+          </div>
+          <div>
+            <AiOutlineGithub  size={70} color={'#AD5C51'}/>
+          </div>
+          <div>
+          </div>
+        </div>
       </div>
 
       <div 

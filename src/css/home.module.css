@@ -40,6 +40,27 @@
     border-color: transparent
   }
 }
+.homeSubContainer {
+  background-color: #242629;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  -webkit-box-shadow: 6px 3px 12px -6px #242629; 
+  box-shadow: 6px 3px 12px -6px #242629;
+}
+
+.homeIcons {
+  margin: 10px;
+}
+
+.homeHeadingSubTitle {
+  color: #fffffe;
+  font-size: 1.5em;
+  font-family: monospace;
+}
 
 .homeDescriptionContainer {
   display: flex;
@@ -52,7 +73,6 @@
   border-radius: 50%;
   border: 1px solid #010101;
   width: 200px;
-  /* margin: 10px 0; */
 }
 
 .homeParagraph {
