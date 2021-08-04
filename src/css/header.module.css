@@ -1,0 +1,27 @@
+.headerContainer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #94a1b213;
+  box-sizing: border-box;
+}
+
+.navContainer {
+  display: flex;
+  width: 20vw;
+  justify-content: space-around;
+  font-family: monospace;
+}
+
+.navLink {
+  color: #fffffe;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.activeNavLink {
+  text-decoration: underline;
+  text-decoration-color: #94a1b298;
+}
