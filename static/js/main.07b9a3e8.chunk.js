@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[0],{15:function(t,e,n){},16:function(t,e,n){},26:function(t,e,n){"use strict";n.r(e);var o=n(0),c=n.n(o),r=n(8),i=n.n(r),s=(n(15),n(16),n(2));var a=function(){return Object(s.jsx)("div",{className:"App",children:"Hugo Somers"})},p=n(10);i.a.render(Object(s.jsx)(p.a,{children:Object(s.jsx)(c.a.StrictMode,{children:Object(s.jsx)(a,{})})}),document.getElementById("root"))}},[[26,1,2]]]);
-//# sourceMappingURL=main.07b9a3e8.chunk.js.map
