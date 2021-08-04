@@ -62,6 +62,27 @@
 
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #16161a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242629;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a1b260; 
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #94a1b2; 
+}
+
 .projectItemDescription {
   margin: 0px 50px;
 }
