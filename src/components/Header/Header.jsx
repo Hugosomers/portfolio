@@ -18,6 +18,9 @@ export default function Header() {
       <ReactSwitch
         onChange={ switchHandle }
         checked={checkedSwitch}
+        uncheckedIcon={false}
+        checkedIcon={false}
+        onColor="#2cb67d"
       >
       </ReactSwitch>
       <nav
