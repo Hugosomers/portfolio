@@ -9,7 +9,7 @@ export default function ProjectsItem() {
     <>
       {projectsData.map((item, index) => (
         <div key={index} className={projectsStyles.projectItemContainer}>
-          <img alt="ProjectItem" />
+          <img src={item.image} alt="ProjectItem" className={projectsStyles.projectsImg}/>
           <div className={projectsStyles.projectItemDescription}>
             <h1 className={projectsStyles.projectItemTitle}>{item.name}</h1>
             <p className={projectsStyles.projectItemText}>{item.description}</p>
