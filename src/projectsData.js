@@ -1,4 +1,5 @@
 import FacebookIMG from './images/facebook.PNG';
+import recipesAppProject from './images/recipesAppProject.PNG';
 const projectsData = [
   {
     name: 'Facebook Login Page',
@@ -8,7 +9,7 @@ const projectsData = [
   },
   {
     name: 'Recipes App',
-    image: '',
+    image: recipesAppProject,
     description: 'Projeto em grupo na Trybe, o objetivo era desenvolver um aplicativo de consulta das mais variadas receitas de comidas e drinks disponíveis nas APIs passadas pela Trybe.',
     gitHubLink: 'https://github.com/tryber/sd-011-project-recipes-app/pull/35',
   },
