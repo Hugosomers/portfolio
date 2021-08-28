@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+import binemonStyles from '../css/binemon.module.css';
 
 export default function Binemon() {
   const [inputValue, setInputValue] = useState('');
@@ -16,11 +17,11 @@ export default function Binemon() {
     .then((monInfo) => setData(monInfo.response))
   }
   return (
-    <div className="binemonApp">
+    <div className={binemonStyles.binemonApp}>
 
-    <h1 className="h1Title">Binemon Skills Search</h1>
+    <h1 className={binemonStyles.h1Title}>Binemon Skills Search</h1>
 
-    <div className="searchDiv">
+    <div className={binemonStyles.searchDiv}>
       <form>
         <h3>Digite um ID de MON:</h3>
         <input 
@@ -38,16 +39,16 @@ export default function Binemon() {
     </div>
 
     {data &&
-      <div className="binemonDiv">
-        <div className="monApresentation">
+      <div  className={binemonStyles.binemonDiv}>
+        <div className={binemonStyles.monApresentation}>
           <h1>{data.binemon_item.name}</h1>
-          <img src={data.binemon_item.thumbnail} alt="binemon" className="binemonImg"/>
+          <img src={data.binemon_item.thumbnail} alt="binemon" className={binemonStyles.binemonImg}/>
         </div>
         <h3>Classe: {data.binemon_item.class === 3 ? 'Suporte' : null}</h3>
-        <div className="skillsDiv">
+        <div className={binemonStyles.skillsDiv}>
           <h2>Skills:</h2>
-          <ul className="skillsList">
-            {data.binemon_item.skills && data.binemon_item.skills.map((item) => <li className="skillsItem">{item}</li>)}
+          <ul className={binemonStyles.skillsList}>
+            {data.binemon_item.skills && data.binemon_item.skills.map((item) => <li className={binemonStyles.skillsItem}>{item}</li>)}
           </ul>
         </div>
       </div>
