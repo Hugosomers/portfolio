@@ -4,6 +4,13 @@ import binemonStyles from '../css/binemon.module.css';
 export default function Binemon() {
   const [inputValue, setInputValue] = useState('');
   const [data, setData] = useState(false);
+  const classes = {
+    1: 'Fighter',
+    2: 'Tanker',
+    3: 'Suporte',
+    4: 'Mage',
+    5: 'Archer'
+  }
 
   console.log(data);
 
@@ -44,11 +51,18 @@ export default function Binemon() {
           <h1>{data.binemon_item.name}</h1>
           <img src={data.binemon_item.thumbnail} alt="binemon" className={binemonStyles.binemonImg}/>
         </div>
-        <h3>Classe: {data.binemon_item.class === 3 ? 'Suporte' : null}</h3>
+        <h3>Classe: {classes[data.binemon_item.class]}</h3>
         <div className={binemonStyles.skillsDiv}>
           <h2>Skills:</h2>
           <ul className={binemonStyles.skillsList}>
-            {data.binemon_item.skills && data.binemon_item.skills.map((item) => <li className={binemonStyles.skillsItem}>{item}</li>)}
+            {data.binemon_item.skills && data.binemon_item.skills.map((item, index) => (
+              <li 
+                className={binemonStyles.skillsItem}
+                key={index}
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
