@@ -4,6 +4,7 @@ import ProfilePic from '../images/profile.jpeg'
 import { FaReact } from 'react-icons/fa';
 import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5, SiNodeDotJs, SiMysql, SiMongodb } from 'react-icons/si';
 import { AiOutlineGithub } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -64,12 +65,16 @@ export default function Home() {
           Formado em Gestão da Tecnologia da Informação - IF Sudeste MG<br/>
           Especializando em desenvolvimento web Full Stack pela Trybe
         </p>
-
-        <button
-          className={homeStyles.homeButton}
+        <Link
+          to={{pathname: 'https://gitconnected.com/hugosomers/resume'}}
+          target='_blank'
         >
-          Currículo
-        </button>
+          <button
+            className={homeStyles.homeButton}
+          >
+            Currículo
+          </button>
+        </Link>
       </div>
     </section>
   )
