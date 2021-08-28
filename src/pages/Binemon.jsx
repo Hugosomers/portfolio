@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+import PowerfulIdentifier from '../components/BinemonApp/PowerfulIdentifier';
 import binemonStyles from '../css/binemon.module.css';
 
 export default function Binemon() {
@@ -10,6 +11,14 @@ export default function Binemon() {
     3: 'Suporte',
     4: 'Mage',
     5: 'Archer'
+  }
+
+  const breeds = {
+    1: 'Dog',
+    2: 'Cat',
+    3: 'Titan',
+    4: 'Unicorn',
+    5: 'Fused'
   }
 
   console.log(data);
@@ -47,11 +56,17 @@ export default function Binemon() {
 
     {data &&
       <div  className={binemonStyles.binemonDiv}>
+        <PowerfulIdentifier 
+          monClass={classes[data.binemon_item.class]}
+          monSkills={data.binemon_item.skills}
+
+        />
         <div className={binemonStyles.monApresentation}>
           <h1>{data.binemon_item.name}</h1>
           <img src={data.binemon_item.thumbnail} alt="binemon" className={binemonStyles.binemonImg}/>
         </div>
         <h3>Classe: {classes[data.binemon_item.class]}</h3>
+        <h3>{breeds[data.binemon_item.breed]}</h3>
         <div className={binemonStyles.skillsDiv}>
           <h2>Skills:</h2>
           <ul className={binemonStyles.skillsList}>
