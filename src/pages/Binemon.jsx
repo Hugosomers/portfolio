@@ -4,11 +4,11 @@ import binemonStyles from '../css/binemon.module.css';
 
 export default function Binemon() {
   const [inputValue, setInputValue] = useState('');
-  const [data, setData] = useState(false);
+  const [data, setData] = useState({});
   const classes = {
     1: 'Fighter',
     2: 'Tanker',
-    3: 'Suporte',
+    3: 'Support',
     4: 'Mage',
     5: 'Archer'
   }
@@ -54,22 +54,25 @@ export default function Binemon() {
       </form>
     </div>
 
-    {data &&
+    {Object.keys(data).length > 0 &&
       <div  className={binemonStyles.binemonDiv}>
+        <div className={binemonStyles.monApresentation}>
         <PowerfulIdentifier 
           monClass={classes[data.binemon_item.class]}
           monSkills={data.binemon_item.skills}
-
+          monBreeds={breeds[data.binemon_item.breed]}
         />
-        <div className={binemonStyles.monApresentation}>
           <h1>{data.binemon_item.name}</h1>
           <img src={data.binemon_item.thumbnail} alt="binemon" className={binemonStyles.binemonImg}/>
         </div>
+
         <h3>Classe: {classes[data.binemon_item.class]}</h3>
         <h3>{breeds[data.binemon_item.breed]}</h3>
+
         <div className={binemonStyles.skillsDiv}>
-          <h2>Skills:</h2>
+
           <ul className={binemonStyles.skillsList}>
+            <h2>Skills:</h2>
             {data.binemon_item.skills && data.binemon_item.skills.map((item, index) => (
               <li 
                 className={binemonStyles.skillsItem}
@@ -79,7 +82,9 @@ export default function Binemon() {
               </li>
             ))}
           </ul>
+
         </div>
+
       </div>
     }
 
