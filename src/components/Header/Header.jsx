@@ -49,6 +49,14 @@ export default function Header() {
         >
           Contato
         </NavLink>
+        
+        <NavLink
+          exact to="/portfolio/binemonApp"
+          className={headerStyles.navLink}
+          activeClassName={headerStyles.activeNavLink}
+        >
+          Binemon App
+        </NavLink>
       </nav>
     </header>
   )
