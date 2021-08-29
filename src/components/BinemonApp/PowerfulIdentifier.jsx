@@ -25,6 +25,31 @@ export default function PowerfulIdentifier({monClass, monSkills, monBreeds}) {
   const cTM1 = monSkills[0] === 'Fortify' && monSkills[1] === 'Cursed_Circle';
   const cTM2 = monSkills[0] === 'Colossus' && monSkills[1] === 'Cursed_Circle';
 
+  // Combos do Dog Tanker
+  const cDT1 = monSkills[0] === 'Fighter_Spirit' && monSkills[1] === 'Almightly_Blow';
+
+  // Combos do Dog Fighter
+  const cDF1 = monSkills[0] === 'Fighter_Spirit' && monSkills[1] === 'Berserker_Mode';
+  const cDF2 = monSkills[0] === 'Fighter_Spirit' && monSkills[1] === 'Rapid_Severence';
+
+    // Combos do Dog Archer
+    const cDA1 = monSkills[0] === 'Fighter_Spirit' && monSkills[1] === 'Projectile_Barrage';
+    const cDA2 = monSkills[0] === 'Fighter_Spirit' && monSkills[1] === 'Deathblow';
+    const cDA3 = monSkills[0] === 'Adapter' && monSkills[1] === 'Projectile_Barrage';
+    const cDA4 = monSkills[0] === 'Adapter' && monSkills[1] === 'Deathblow';
+
+    // Combos do Cat Fighter
+    const cCF1 = monSkills[0] === 'Battle_Blood' && monSkills[1] === 'Berserker_Mode';
+    const cCF2 = monSkills[0] === 'Battle_Blood' && monSkills[1] === 'Rapid_Severence';
+    const cCF3 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Berserker_Mode';
+    const cCF4 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Rapid_Severence';
+
+    // Combos do Cat Archer
+    const cCA1 = monSkills[0] === 'Battle_Blood' && monSkills[1] === 'Projectile_Barrage';
+    const cCA2 = monSkills[0] === 'Battle_Blood' && monSkills[1] === 'Deathblow';
+    const cCA3 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Projectile_Barrage';
+    const cCA4 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Deathblow';
+
   useEffect(() => {
     if (monBreeds === 'Unicorn' && monClass === 'Support') {
       if (cU1 || cU2 || cU3 || cU4) {
@@ -50,8 +75,38 @@ export default function PowerfulIdentifier({monClass, monSkills, monBreeds}) {
       } else {
         dispatch(setPower('weak'));
       }
+    } else if (monBreeds === 'Dog' && monClass === 'Tanker') {
+      if (cDT1) {
+        dispatch(setPower('strong'));
+      } else {
+        dispatch(setPower('weak'));
+      }
+    } else if (monBreeds === 'Dog' && monClass === 'Fighter') {
+      if (cDF1 || cDF2) {
+        dispatch(setPower('strong'));
+      } else {
+        dispatch(setPower('weak'));
+      }
+    } else if (monBreeds === 'Dog' && monClass === 'Archer') {
+      if (cDA1 || cDA2 || cDA3 || cDA4) {
+        dispatch(setPower('strong'));
+      } else {
+        dispatch(setPower('weak'));
+      }
+    } else if (monBreeds === 'Cat' && monClass === 'Fighter') {
+      if (cCF1 || cCF2 || cCF3 || cCF4) {
+        dispatch(setPower('strong'));
+      } else {
+        dispatch(setPower('weak'));
+      }
+    } else if (monBreeds === 'Cat' && monClass === 'Archer') {
+      if (cCA1 || cCA2 || cCA3 || cCA4) {
+        dispatch(setPower('strong'));
+      } else {
+        dispatch(setPower('weak'));
+      }
     }
-  }, [dispatch, monBreeds, monClass, monSkills]);
+  }, [cCA1, cCA2, cCA3, cCA4, cCF1, cCF2, cCF3, cCF4, cDA1, cDA2, cDA3, cDA4, cDF1, cDF2, cDT1, cT1, cT2, cTF1, cTF2, cTM1, cTM2, cU1, cU2, cU3, cU4, dispatch, monBreeds, monClass, monSkills]);
 
   console.log(power)
   return (
