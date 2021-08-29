@@ -3,12 +3,31 @@
   color: #fffffe;
 }
 
+.binemonApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .searchDiv {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
   color: #fffffe;
+  width: 10%;
 }
+
+.binSearchInput {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.binSearchButton {
+  padding: 10px;
+}
+
 .onTopBinDiv {
   display: flex;
   align-items: center;

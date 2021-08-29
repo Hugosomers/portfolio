@@ -38,20 +38,23 @@ export default function Binemon() {
     <h1 className={binemonStyles.h1Title}>Binemon Skills Search</h1>
 
     <div className={binemonStyles.searchDiv}>
-      <form>
-        <h3>Digite um ID de MON:</h3>
-        <input 
-          type="text" 
-          value={inputValue}
-          onChange={inputHandle}
-        />
-        <button 
-          type="button"
-          onClick={dataFetch}
-        >
-          Buscar MON
-        </button>
-      </form>
+      
+      <h3>Digite um ID de MON:</h3>
+      <input 
+        type="text" 
+        value={inputValue}
+        onChange={inputHandle}
+        className={binemonStyles.binSearchInput}
+      />
+      <button 
+        type="button"
+        onClick={dataFetch}
+        disabled={inputValue.length !== 6? true : false}
+        className={binemonStyles.binSearchButton}
+      >
+        Buscar MON
+      </button>
+     
     </div>
 
     {Object.keys(data).length > 0 &&
