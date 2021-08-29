@@ -49,7 +49,6 @@ export default function Binemon() {
       <button 
         type="button"
         onClick={dataFetch}
-        disabled={inputValue.length !== 6? true : false}
         className={binemonStyles.binSearchButton}
       >
         Buscar MON

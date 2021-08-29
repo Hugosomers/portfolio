@@ -26,6 +26,10 @@
 
 .binSearchButton {
   padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fffffe;
+  background-color: #ff8906;
 }
 
 .onTopBinDiv {
@@ -97,6 +101,7 @@
 
 .hr {
   width: 100%;
+  border: 1px solid #0f0e17;
 }
 
 .binAtbDiv {
@@ -110,7 +115,7 @@
 }
 
 .binAtbItem {
-  border: 1px solid black;
+  border: 1px solid #0f0e17;
   border-radius: 4px;
   margin: 2px;
   padding: 10px;
