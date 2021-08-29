@@ -50,67 +50,101 @@ export default function PowerfulIdentifier({monClass, monSkills, monBreeds}) {
     const cCA3 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Projectile_Barrage';
     const cCA4 = monSkills[0] === 'Swift_Movements' && monSkills[1] === 'Deathblow';
 
-  useEffect(() => {
-    if (monBreeds === 'Unicorn' && monClass === 'Support') {
-      if (cU1 || cU2 || cU3 || cU4) {
-        dispatch(setPower('strong'));
+    const unicornSetup = () => {
+      if (monBreeds === 'Unicorn' && monClass === 'Support') {
+        if (cU1 || cU2 || cU3 || cU4) {
+          dispatch(setPower('strong'));
+          
+        } else {
+          dispatch(setPower('weak'));
+          
+        }
       } else {
         dispatch(setPower('weak'));
       }
-    } else if (monBreeds === 'Titan' && monClass === 'Tanker') {
-      if (cT1 || cT2) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Titan' && monClass === 'Fighter') {
-      if (cTF1 || cTF2) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    }  else if (monBreeds === 'Titan' && monClass === 'Mage') {
-      if (cTM1 || cTM2) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Dog' && monClass === 'Tanker') {
-      if (cDT1) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Dog' && monClass === 'Fighter') {
-      if (cDF1 || cDF2) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Dog' && monClass === 'Archer') {
-      if (cDA1 || cDA2 || cDA3 || cDA4) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Cat' && monClass === 'Fighter') {
-      if (cCF1 || cCF2 || cCF3 || cCF4) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else if (monBreeds === 'Cat' && monClass === 'Archer') {
-      if (cCA1 || cCA2 || cCA3 || cCA4) {
-        dispatch(setPower('strong'));
-      } else {
-        dispatch(setPower('weak'));
-      }
-    } else {
-      dispatch(setPower('weak'));
     }
-  }, [cCA1, cCA2, cCA3, cCA4, cCF1, cCF2, cCF3, cCF4, cDA1, cDA2, cDA3, cDA4, cDF1, cDF2, cDT1, cT1, cT2, cTF1, cTF2, cTM1, cTM2, cU1, cU2, cU3, cU4, dispatch, monBreeds, monClass, monSkills]);
 
-  console.log(power)
+    const titanSetup = () => {
+      if ( monClass === 'Tanker') {
+        if (cT1 || cT2) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else if (monClass === 'Fighter') {
+        if (cTF1 || cTF2) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      }  else if (monClass === 'Mage') {
+        if (cTM1 || cTM2) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else {
+        dispatch(setPower('weak'));
+      }
+    }
+
+    const dogSetup = () => {
+      if (monClass === 'Tanker') {
+        if (cDT1) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else if (monClass === 'Fighter') {
+        if (cDF1 || cDF2) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else if (monClass === 'Archer') {
+        if (cDA1 || cDA2 || cDA3 || cDA4) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else {
+        dispatch(setPower('weak'));
+      }
+    }
+
+    const catSetup = () => {
+      if (monClass === 'Fighter') {
+        if (cCF1 || cCF2 || cCF3 || cCF4) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else if (monClass === 'Archer') {
+        if (cCA1 || cCA2 || cCA3 || cCA4) {
+          dispatch(setPower('strong'));
+        } else {
+          dispatch(setPower('weak'));
+        }
+      } else {
+        dispatch(setPower('weak'));
+      }
+    }
+
+  useEffect(() => {
+    if (monBreeds === 'Unicorn') {
+      unicornSetup();
+    }
+    if (monBreeds === 'Titan') {
+      titanSetup();
+    }
+    if (monBreeds === 'Dog'){
+      dogSetup();
+    }
+    if (monBreeds === 'Cat'){
+      catSetup();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch, monBreeds, monClass, monSkills,]);
   return (
     <div>
       <h1 className={power}>O</h1>
