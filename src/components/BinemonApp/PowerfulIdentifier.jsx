@@ -105,6 +105,8 @@ export default function PowerfulIdentifier({monClass, monSkills, monBreeds}) {
       } else {
         dispatch(setPower('weak'));
       }
+    } else {
+      dispatch(setPower('weak'));
     }
   }, [cCA1, cCA2, cCA3, cCA4, cCF1, cCF2, cCF3, cCF4, cDA1, cDA2, cDA3, cDA4, cDF1, cDF2, cDT1, cT1, cT2, cTF1, cTF2, cTM1, cTM2, cU1, cU2, cU3, cU4, dispatch, monBreeds, monClass, monSkills]);
 
