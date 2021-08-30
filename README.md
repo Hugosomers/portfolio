@@ -17,4 +17,3 @@ Os esboços das páginas que eu gostaria foram feitos no site: https://excalidra
 ## RoadMap
 - Criar a lógica para o Switch de Dark/Light Mode
 - Mobile First e responsividade
-- Criar API para armazenar dados de projetos
