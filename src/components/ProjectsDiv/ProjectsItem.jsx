@@ -14,9 +14,14 @@ export default function ProjectsItem() {
             <h1 className={projectsStyles.projectItemTitle}>{item.name}</h1>
             <p className={projectsStyles.projectItemText}>{item.description}</p>
             <div className={projectsStyles.projectItemButtonsContainer}>
-              <button className={projectsStyles.projectItemButton}>
-                Acessar Projeto
-              </button>
+              <Link
+                to={{pathname: item.projectAccessLink}}
+                target='_blank'
+              >
+                <button className={projectsStyles.projectItemButton}>
+                  Acessar Projeto
+                </button>
+              </Link>
               <Link
                 to={{pathname: item.gitHubLink}}
                 target='_blank'
