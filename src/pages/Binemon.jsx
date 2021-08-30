@@ -21,8 +21,6 @@ export default function Binemon() {
     5: 'Fused'
   }
 
-  console.log(data);
-
   const inputHandle = ({target}) => {
     setInputValue(target.value);
   }
@@ -30,8 +28,10 @@ export default function Binemon() {
   const dataFetch = () => {
     fetch(`https://api.binemon.io/api/binemons/token/${inputValue}`)
     .then((response) => response.json())
-    .then((monInfo) => setData(monInfo.response))
+    .then((monInfo) => monInfo.response && setData(monInfo.response))
+    .catch((error) => console.log(error))
   }
+
   return (
     <div className={binemonStyles.binemonApp}>
 
