@@ -23,7 +23,7 @@ export default function ProjectsItem() {
                 </button>
               </Link>
               <Link
-                to={item.gitHubLink}
+                to={{pathname: item.gitHubLink}}
               >
                 <AiOutlineGithub
                   size={40}
