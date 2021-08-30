@@ -72,7 +72,8 @@
 .homeProfilePic {
   border-radius: 50%;
   border: 1px solid #010101;
-  width: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .homeParagraph {

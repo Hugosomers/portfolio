@@ -1,6 +1,6 @@
 import React from 'react'
 import homeStyles from '../css/home.module.css';
-import ProfilePic from '../images/profile.jpeg'
+import Perfil from '../images/Perfil.jpeg'
 import { FaReact } from 'react-icons/fa';
 import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5, SiNodeDotJs, SiMysql, SiMongodb } from 'react-icons/si';
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -55,7 +55,7 @@ export default function Home() {
         className={homeStyles.homeDescriptionContainer}
       >
         <img
-          src={ProfilePic}
+          src={Perfil}
           className={homeStyles.homeProfilePic}
           alt="profile"
         />
