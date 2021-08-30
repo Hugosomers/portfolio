@@ -1,6 +1,8 @@
 import React from 'react';
 import * as emailjs from "emailjs-com";
 import contactStyles from '../css/contact.module.css';
+import { SiLinkedin, SiGithub } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -18,6 +20,20 @@ export default function Contact() {
     <div className={contactStyles.contactDiv}>
       <div className={contactStyles.contactApresentationDiv}>
         <h1 className={contactStyles.contactHeadingTitle}>Entre em contato comigo.</h1>
+        <div>
+          <Link
+            to={{pathname: 'https://www.linkedin.com/in/hugo-somers-lombardi-abreu/'}}
+            target='_blank'
+          > 
+            <SiLinkedin  size={40} color={'#2867B2'} className={contactStyles.icons} />
+          </Link>
+          <Link
+            to={{pathname: 'https://github.com/Hugosomers'}}
+            target='_blank'
+          > 
+            <SiGithub  size={40} color={'#AD5C51'} className={contactStyles.icons} />
+          </Link>
+        </div>
       </div>
       <div className={contactStyles.formDiv}>
         <form className={contactStyles.contactForm} onSubmit={sendEmail}>
