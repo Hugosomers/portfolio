@@ -24,6 +24,7 @@ export default function ProjectsItem() {
               </Link>
               <Link
                 to={{pathname: item.gitHubLink}}
+                target='_blank'
               >
                 <AiOutlineGithub
                   size={40}

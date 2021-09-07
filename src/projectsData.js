@@ -20,7 +20,7 @@ const projectsData = [
     name: 'Binemon Search App',
     image: binemonAppProject,
     description: 'Projeto pessoal criado para amigos que o pediram, o objetivo era desenvolver uma aplicação de consulta de bonecos de um jogo NFT, a consulta era feita pelo ID do boneco que buscava pela API que o jogo possui. A aplicação mostra todas as informações do boneco e compara a combinação de poderes, classe e raça que aquele boneco em específico possui e retorna um visual, identificando o boneco como bom para compra ou ruim.',
-    gitHubLink: 'https://github.com/Hugosomers/portfolio/pull/5',
+    gitHubLink: 'https://github.com/Hugosomers/binemon-app',
     projectAccessLink: 'https://hsbinemonsearchproject.netlify.app/',
   },
 ];
