@@ -7,7 +7,7 @@ const projectsData = [
     image: FacebookIMG,
     description: 'Projeto desenvolvido com a finalidade de praticar Redux e suas funcionalidades, entender a ideia de autenticação(feita somente por front-end) e aplicar conhecimentos em CSS para chegar a resultados parecidos com o site oficial do Facebook.',
     gitHubLink: 'https://github.com/Hugosomers/facebookProject',
-    projectAccessLink: '',
+    projectAccessLink: 'https://hsfacebookproject.netlify.app/',
   },
   {
     name: 'Recipes App',
@@ -21,7 +21,7 @@ const projectsData = [
     image: binemonAppProject,
     description: 'Projeto pessoal criado para amigos que o pediram, o objetivo era desenvolver uma aplicação de consulta de bonecos de um jogo NFT, a consulta era feita pelo ID do boneco que buscava pela API que o jogo possui. A aplicação mostra todas as informações do boneco e compara a combinação de poderes, classe e raça que aquele boneco em específico possui e retorna um visual, identificando o boneco como bom para compra ou ruim.',
     gitHubLink: 'https://github.com/Hugosomers/portfolio/pull/5',
-    projectAccessLink: 'https://hugosomers.github.io/portfolio/binemonApp',
+    projectAccessLink: 'https://hsbinemonsearchproject.netlify.app/',
   },
 ];
 
