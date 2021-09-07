@@ -14,7 +14,7 @@ const projectsData = [
     image: recipesAppProject,
     description: 'Projeto em grupo na Trybe, o objetivo era desenvolver um aplicativo de consulta das mais variadas receitas de comidas e drinks disponíveis nas APIs passadas pela Trybe.',
     gitHubLink: 'https://github.com/tryber/sd-011-project-recipes-app/pull/35',
-    projectAccessLink: '',
+    projectAccessLink: 'https://hsrecipesappproject.netlify.app',
   },
   {
     name: 'Binemon Search App',
