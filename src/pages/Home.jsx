@@ -1,6 +1,6 @@
 import React from 'react'
 import homeStyles from '../css/home.module.css';
-import Perfil from '../images/Perfil.jpeg'
+import Perfil from '../images/profile2.jpg'
 import { FaReact } from 'react-icons/fa';
 import { SiRedux, SiJavascript, SiCss3, SiBootstrap, SiHtml5, SiNodeDotJs, SiMysql, SiMongodb } from 'react-icons/si';
 import { AiOutlineGithub } from 'react-icons/ai';
