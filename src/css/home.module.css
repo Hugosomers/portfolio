@@ -54,6 +54,7 @@
 
 .homeIcons {
   margin: 10px;
+  font-size: 70px;
 }
 
 .homeHeadingSubTitle {
@@ -95,3 +96,48 @@
 .homeButton:hover {
   background-color: #7f5af0d7;
 }
+
+@media screen and (max-width: 1280px) {
+  .homeProfilePic {
+    width: 200px;
+  }
+
+  .homeParagraph {
+    font-size: 1.3em;
+    line-height: 30px;
+  }
+
+  .homeButton {
+    font-size: 1em;
+    padding: 10px 30px;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .homeContainer {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .homeHeadingTitle {
+    font-size: 1.8em;
+  }
+  .homeHeading {
+    font-size: 1.8em;
+  }
+
+  .homeSubContainer {
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  .homeIcons {
+    margin: 5px;
+    font-size: 40px;
+  }
+}
+
