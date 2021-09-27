@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dc6e00c6.chunk.css",
-    "main.js": "/portfolio/static/js/main.efa93155.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.efa93155.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.fbc84a44.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fbc84a44.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
     "static/js/2.3989f0b7.chunk.js": "/portfolio/static/js/2.3989f0b7.chunk.js",
@@ -10,6 +10,7 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.dc6e00c6.chunk.css.map": "/portfolio/static/css/main.dc6e00c6.chunk.css.map",
     "static/js/2.3989f0b7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3989f0b7.chunk.js.LICENSE.txt",
+    "static/media/ToDoList.d12aa0cd.PNG": "/portfolio/static/media/ToDoList.d12aa0cd.PNG",
     "static/media/binemonApp.ed46525c.PNG": "/portfolio/static/media/binemonApp.ed46525c.PNG",
     "static/media/facebook.e772af42.PNG": "/portfolio/static/media/facebook.e772af42.PNG",
     "static/media/profile2.a8d53d61.jpg": "/portfolio/static/media/profile2.a8d53d61.jpg",
@@ -19,6 +20,6 @@
     "static/js/runtime-main.bcd5af5a.js",
     "static/js/2.3989f0b7.chunk.js",
     "static/css/main.dc6e00c6.chunk.css",
-    "static/js/main.efa93155.chunk.js"
+    "static/js/main.fbc84a44.chunk.js"
   ]
 }
