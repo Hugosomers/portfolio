@@ -1,6 +1,7 @@
 import FacebookIMG from './images/facebook.PNG';
 import recipesAppProject from './images/recipesAppProject.PNG';
 import binemonAppProject from './images/binemonApp.PNG';
+import toDoList from './images/ToDoList.PNG';
 const projectsData = [
   {
     name: 'Facebook Login Page',
@@ -22,6 +23,13 @@ const projectsData = [
     description: 'Projeto pessoal criado para amigos que o pediram, o objetivo era desenvolver uma aplicação de consulta de bonecos de um jogo NFT, a consulta era feita pelo ID do boneco que buscava pela API que o jogo possui. A aplicação mostra todas as informações do boneco e compara a combinação de poderes, classe e raça que aquele boneco em específico possui e retorna um visual, identificando o boneco como bom para compra ou ruim.',
     gitHubLink: 'https://github.com/Hugosomers/binemon-app',
     projectAccessLink: 'https://hsbinemonsearchproject.netlify.app/',
+  },
+  {
+    name: 'To Do List',
+    image: toDoList,
+    description: 'Projeto pessoal criado para praticar React, Redux e Hooks, entre outras tecnologias.',
+    gitHubLink: 'https://github.com/Hugosomers/to-do-list',
+    projectAccessLink: 'https://hs-to-do-list.netlify.app/',
   },
 ];
 
