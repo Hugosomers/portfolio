@@ -33,18 +33,18 @@ export default function Home() {
             O que eu sei?
           </h2>
           <div>
-            <SiHtml5  size={70} color={'#e34c26'} className={homeStyles.homeIcons}/>
-            <SiCss3 size={70} color={'#264de4'} className={homeStyles.homeIcons}/>
-            <SiBootstrap  size={70} color={'#602C50'} className={homeStyles.homeIcons}/>
-            <SiJavascript size={70} color={'Yellow'} className={homeStyles.homeIcons}/>
-            <FaReact size={70} color={'#61DBFB'} className={homeStyles.homeIcons}/>
-            <SiRedux  size={70} color={'#764abc'} className={homeStyles.homeIcons}/>
+            <SiHtml5  color={'#e34c26'} className={homeStyles.homeIcons}/>
+            <SiCss3 color={'#264de4'} className={homeStyles.homeIcons}/>
+            <SiBootstrap  color={'#602C50'} className={homeStyles.homeIcons}/>
+            <SiJavascript color={'Yellow'} className={homeStyles.homeIcons}/>
+            <FaReact color={'#61DBFB'} className={homeStyles.homeIcons}/>
+            <SiRedux  color={'#764abc'} className={homeStyles.homeIcons}/>
           </div>
           <div>
-            <SiNodeDotJs  size={70} color={'#3C873A'} className={homeStyles.homeIcons}/>
-            <SiMysql  size={70} color={'#00758F'} className={homeStyles.homeIcons}/>
-            <SiMongodb  size={70} color={'#4DB33D'} className={homeStyles.homeIcons}/>
-            <AiOutlineGithub  size={70} color={'#AD5C51'} className={homeStyles.homeIcons}/>
+            <SiNodeDotJs  color={'#3C873A'} className={homeStyles.homeIcons}/>
+            <SiMysql  color={'#00758F'} className={homeStyles.homeIcons}/>
+            <SiMongodb  color={'#4DB33D'} className={homeStyles.homeIcons}/>
+            <AiOutlineGithub  color={'#AD5C51'} className={homeStyles.homeIcons}/>
           </div>
           <div>
           </div>
